@@ -1,19 +1,39 @@
+@import '../Vars.scss';
+
 .footer {
-  align-items: center;
-  background-color: #8f57fd;
-  display: flex;
-  height: 100px;
-  width: 100%;
+    align-items: center;
+    background-color: $main-color;
+    display: flex;
+    height: 100px;
+    width: 100%;
 }
-
+  
 .footer a {
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  padding-left: 30px;
-  text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
 }
-
+  
 .footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+  
+.input {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    font-family: $theme-font;
+    font-size: 16px;
+    height: 50px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 0px 20px;
+    width: 70%;
+} 
+  
+::placeholder {
+    color: white;
 }
