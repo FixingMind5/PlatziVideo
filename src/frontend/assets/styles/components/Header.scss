@@ -17,6 +17,19 @@
   
   &__menu {
     margin-right: 30px;
+
+    &--profile {
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+    }
+    
+    &--profile img {
+      margin-right: 8px;
+      width: 40px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
   }
   
   &__menu ul {
@@ -34,6 +47,12 @@
   }
   
   &__menu li {
+    // Whatf with this ⁄ ? look a⁄b
+    // I need tho take three steps to get
+    // other side because this
+    //  ⁄ is a character that could be 
+    // "over" the charachters 
+    //  ⁄  
     margin: 10px 0px;
   }
   
@@ -44,27 +63,9 @@
   
   &__menu li a:hover {
     text-decoration: underline;
-
-    &--profile {
-      align-items: center;
-      display: flex;
-      cursor: pointer;
-    }
-    
-    &--profile img {
-      margin-right: 8px;
-      width: 40px;
-    }
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .main__description--title {
-    font-size: 30px;
-  }
-
-  .footer {
-    align-items: flex-start;
-    flex-direction: column;
-  }
+.isLogin {
+  background: $secondary-color;
 }
